@@ -1,0 +1,13 @@
+<div style="width: 400px;height: 300px; border: solid 1px #ff0000;display:inline-block;">
+    <p style="text-align: center;font-size: 18px;font-weight: 600;">
+      这里是router项目组件
+    </p>
+    <p style="text-align: center;">我要传值:6</p>
+    <button nz-button nzType="primary" (click)="this.router.navigate(['/router/projectdetails','6'])">点击查看详情</button>
+    <a [routerLink]="['/router/projectdetails']" [queryParams]="{id:6}" style="margin-right: 30px;margin-top: 10px；">点击查看详情2</a>
+
+    <div style=" width: 200px; height: 150px; border: solid 1px forestgreen;margin-top: 8px;">
+            如果使用<a></a>标签中的[queryParams]进行传值，那么在app-routing.module路由路径配置中，就不需要在path值后添加参数，例如projectdetails/:id等等。。
+        </div>
+</div>
+

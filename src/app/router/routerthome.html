@@ -1,0 +1,8 @@
+<div style="width: 400px;height: 300px; border: solid 1px #FFD700;display: inline-block;float:left;">
+    <a [routerLink]="['/router/projecthome']" style="margin-right: 30px;">项目主页</a>
+    <a [routerLink]="[{outlets: {aux:'chat'}}]" style="margin-right: 30px;">开始聊天</a>
+    <!-- <a [routerLink]="[{outlets: {primary: 'router',aux:'chat'}}]" style="margin-right: 30px;">开始聊天2</a>  primary指定主路由跳转 -->
+    <a [routerLink]="[{outlets: {aux:null}}]" style="margin-right: 30px;">结束聊天</a>
+</div>
+<router-outlet></router-outlet>
+<router-outlet name="aux"></router-outlet> <!--  辅助路由 -->

@@ -1,0 +1,114 @@
+
+
+
+.loadingbar {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 18px;
+}
+
+  .loadingbar .grain {
+    position: absolute;
+    display: inline;
+    color: #5c2d91;
+    opacity: 1;
+    filter: alpha(opacity=1);
+    left: -12px;
+    font-size: 8px;
+    text-align: center;
+  }
+
+
+  .loadingbar .dealy-0 {
+    animation: apploading 5s cubic-bezier(0.18,0.73,0.87,0.24) 0s infinite;
+  }
+
+  .loadingbar .dealy-1 {
+    animation: apploading 5s cubic-bezier(0.18,0.73,0.87,0.24) .2s infinite;
+  }
+
+  .loadingbar .dealy-2 {
+    animation: apploading 5s cubic-bezier(0.18,0.73,0.87,0.24) .4s infinite;
+  }
+
+  .loadingbar .dealy-3 {
+    animation: apploading 5s cubic-bezier(0.18,0.73,0.87,0.24) .6s infinite;
+  }
+
+  .loadingbar .dealy-4 {
+    animation: apploading 5s cubic-bezier(0.18,0.73,0.87,0.24) .8s infinite;
+  }
+
+@keyframes apploading {
+
+  from {
+    left: -12px;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes apploading {
+  from {
+    left: -12px;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+@-moz-keyframes apploading {
+  from {
+    left: -12px;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+
+
+.butterbar {
+  position: relative;
+  width: 100%;
+  background: #f2f2f2;
+  height: 3px;
+}
+
+
+  .butterbar .bar {
+    height: 3px;
+    position: absolute;
+    width: 0px;
+    background: #0078d7;
+    animation: movingbar 10s infinite;
+  }
+
+    .butterbar .bar:before {
+      content: ""
+    }
+
+@-webkit-keyframes movingbar {
+  100% {
+    width: 100%;
+  }
+}
+
+@-moz-keyframes movingbar {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes movingbar {
+
+  100% {
+    width: 100%;
+  }
+}
